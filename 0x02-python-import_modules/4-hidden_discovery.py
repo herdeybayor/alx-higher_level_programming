@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" 4-hidden_discovery.py """
 import hidden_4
 
-def discover():
-    """ discover """
-    for name in dir(hidden_4):
-        if name[:2] != "__":
-            print(name)
+i = 0
 
-if __name__ == "__main__":
-    discover()
+if __name__ == '__main__':
+    mylist = dir(hidden_4)
+    newlist = sorted(mylist)
+    while i < len(newlist):
+        if newlist[i][0] != '_':
+            print(newlist[i])
+        i += 1
