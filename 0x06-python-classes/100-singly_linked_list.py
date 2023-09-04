@@ -11,8 +11,8 @@ class Node:
             data (int): data of the node
             next_node (Node): next node
         """
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
