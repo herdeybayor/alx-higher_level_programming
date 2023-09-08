@@ -1,13 +1,24 @@
-#!/usr/bin/python3
+Tests for 0-add_integer.py
 
-"""
-This is a test module for the add_integer function.
+This module contains tests for the function add_integer
 
-Usage:
-    Run this module using the following command:
-    python3 -m doctest -v ./tests/0-add_integer.txt
-"""
+>>> add_integer = __import__('0-add_integer').add_integer
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("./tests/0-add_integer.txt")
+>>> print(add_integer.__doc__)
+Return the sum of two integers.
+
+>>> print(add_integer(1, 2))
+3
+
+>>> print(add_integer(100, -2))
+98
+
+>>> print(add_integer(2))
+100
+
+>>> print(add_integer(100.3, -2))
+98
+
+>>> print(add_integer("School", 2))
+Traceback (most recent call last):
+TypeError: a must be an integer

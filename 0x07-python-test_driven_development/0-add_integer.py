@@ -3,18 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """Return the sum of two integers.
-
-    Args:
-        a (int): The first integer to add.
-        b (int): The second integer to add.
-
-    Returns:
-        The return value. a + b
-
-    Raises:
-        TypeError: If either of a or b is a non-integer.
-    """
+    """Return the sum of two integers."""
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
